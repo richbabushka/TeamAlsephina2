@@ -1,12 +1,14 @@
 package Alisher;
 
+import java.time.LocalDate;
+
 public class Team {
     private  String name;
     private String power,weakness;
 
     public Team(String name, String power, String weakness) {
         this.name = name;
-        this.power = power;
+       setPower(power);
         setWeakness(weakness);
     }
 
@@ -40,6 +42,10 @@ public class Team {
 
         }
         this.weakness = weakness;
+    }
+
+    public  void  Retro(){
+
     }
 
     @Override
